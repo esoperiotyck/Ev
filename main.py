@@ -30,7 +30,7 @@ WHITE = 85
 threshold = (BLACK + WHITE) / 2
 
 # Set the drive speed at 100 millimeters per second.
-DRIVE_SPEED = 25
+DRIVE_SPEED = 100
 
 # Set the gain of the proportional line controller. This means that for every
 # percentage point of light deviating from the threshold, we set the turn
@@ -52,4 +52,4 @@ while True:
     robot.drive(-DRIVE_SPEED, -turn_rate)
 
     # You can wait for a short time or do other things in this loop.
-    wait(50)
+    wait(15)
