@@ -15,4 +15,4 @@ robot = DriveBase(left_motor, right_motor, wheel_diameter=68, axle_track=180)
 while True:
   threshold1 = line_sensor.reflection() - 25
   threshold2 = threshold1*-0.6
-  robot.drive(-100, -threshold2)
+  robot.drive(-100, -threshold2*2)
