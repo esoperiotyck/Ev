@@ -15,14 +15,14 @@ from pybricks.tools import wait
 from pybricks.robotics import DriveBase
 
 # Initialize the motors.
-left_motor = Motor(Port.B)
+left_motor = Motor(Port.A)
 right_motor = Motor(Port.C)
 
 # Initialize the color sensor.
-line_sensor = ColorSensor(Port.S3)
+line_sensor = ColorSensor(Port.S4)
 
 # Initialize the drive base.
-robot = DriveBase(left_motor, right_motor, wheel_diameter=55.5, axle_track=104)
+robot = DriveBase(left_motor, right_motor, wheel_diameter=55.5, axle_track=180)
 
 # Calculate the light threshold. Choose values based on your measurements.
 BLACK = 9
