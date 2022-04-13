@@ -38,7 +38,7 @@ DRIVE_SPEED = 100
 
 # For example, if the light value deviates from the threshold by 10, the robot
 # steers at 10*1.2 = 12 degrees per second.
-PROPORTIONAL_GAIN = 1.2
+PROPORTIONAL_GAIN = 1.05
 
 # Start following the line endlessly.
 while True:
