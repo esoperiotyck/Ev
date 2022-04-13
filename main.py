@@ -22,7 +22,7 @@ right_motor = Motor(Port.C)
 line_sensor = ColorSensor(Port.S4)
 
 # Initialize the drive base.
-robot = DriveBase(left_motor, right_motor, wheel_diameter=68, axle_track=200)
+robot = DriveBase(left_motor, right_motor, wheel_diameter=68, axle_track=180)
 
 # Calculate the light threshold. Choose values based on your measurements.
 BLACK = 9
@@ -30,7 +30,7 @@ WHITE = 85
 threshold = (BLACK + WHITE) / 2
 
 # Set the drive speed at 100 millimeters per second.
-DRIVE_SPEED = 100
+DRIVE_SPEED = 25
 
 # Set the gain of the proportional line controller. This means that for every
 # percentage point of light deviating from the threshold, we set the turn
@@ -52,4 +52,4 @@ while True:
     robot.drive(-DRIVE_SPEED, -turn_rate)
 
     # You can wait for a short time or do other things in this loop.
-    wait(10)
+    wait(25)
