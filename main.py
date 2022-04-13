@@ -52,4 +52,4 @@ while True:
     robot.drive(-DRIVE_SPEED, -turn_rate)
 
     # You can wait for a short time or do other things in this loop.
-    wait(10)
+    wait(1)
