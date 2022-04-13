@@ -22,7 +22,7 @@ right_motor = Motor(Port.C)
 line_sensor = ColorSensor(Port.S4)
 
 # Initialize the drive base.
-robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=104)
+robot = DriveBase(left_motor, right_motor, wheel_diameter=68, axle_track=200)
 
 # Calculate the light threshold. Choose values based on your measurements.
 BLACK = 9
@@ -38,7 +38,7 @@ DRIVE_SPEED = 100
 
 # For example, if the light value deviates from the threshold by 10, the robot
 # steers at 10*1.2 = 12 degrees per second.
-PROPORTIONAL_GAIN = 1.5
+PROPORTIONAL_GAIN = 1.2
 
 # Start following the line endlessly.
 while True:
