@@ -25,12 +25,12 @@ line_sensor = ColorSensor(Port.S4)
 robot = DriveBase(left_motor, right_motor, wheel_diameter=68, axle_track=180)
 
 # Calculate the light threshold. Choose values based on your measurements.
-BLACK = 9
-WHITE = 85
+BLACK = 50
+WHITE = 50
 threshold = (BLACK + WHITE) / 2
 
 # Set the drive speed at 100 millimeters per second.
-DRIVE_SPEED = 75
+DRIVE_SPEED = 100
 
 # Set the gain of the proportional line controller. This means that for every
 # percentage point of light deviating from the threshold, we set the turn
